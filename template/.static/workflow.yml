@@ -1,0 +1,8 @@
+jobs:
+  dummy-workflow:
+    runs-on: self-hosted
+    steps:
+      - name: Success message
+        # This expression will fail handlebars eval:
+        if: ${{ success() }}
+        uses: actions/github-script@v4
