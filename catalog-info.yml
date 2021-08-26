@@ -1,0 +1,11 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "actions-template-test"
+  github.com/project-slug: Tradeshift/actions-template-test
+spec:
+  type: other
+  lifecycle: experimental
+  owner: "developer-productivity"
+  system: ""
