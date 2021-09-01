@@ -1,0 +1,24 @@
+name: template-test
+description: Test a scaffolder template
+author: Jacob Wejendorp
+inputs:
+  url:
+    description: Path to the template directory to use
+    default: ./template
+    required: true
+  targetPath:
+    description: Target path within the working directory to download the contents to. Defaults to the working directory root.
+    default: ./
+  copyWithoutRender:
+    description: 'An array of glob patterns. Any files or directories which match are copied without being processed as templates.'
+    default: ''
+  values:
+    description: JSON values for the scaffolder
+    default: |
+      {}
+  cookiecutterCompat:
+    description: Enable features to maximise compatibility with templates built for fetch:cookiecutter
+    default: false
+runs:
+  using: node12
+  main: index.js
