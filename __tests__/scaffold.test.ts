@@ -16,7 +16,7 @@ describe('scaffold', () => {
           values: {},
         })
       ).rejects.toThrow();
-
+      // fails to template the workflow
       await expect(
         fs.pathExists(
           path.resolve(process.cwd(), targetPath, '.static/workflow.yml')
@@ -25,6 +25,7 @@ describe('scaffold', () => {
     });
 
     it('works w/ copyWithoutRender', async () => {
+      const name = 'My awesome app';
       const targetPath = './build/2';
       await fs.emptyDir(targetPath);
 
@@ -33,7 +34,9 @@ describe('scaffold', () => {
           url: './template',
           targetPath,
           copyWithoutRender: ['.static'],
-          values: {},
+          values: {
+            name,
+          },
         })
       ).resolves.toBeUndefined();
 
@@ -42,6 +45,14 @@ describe('scaffold', () => {
           path.resolve(process.cwd(), targetPath, '.static/workflow.yml')
         )
       ).resolves.toEqual(true);
+
+      // contains expected name
+      expect(
+        await fs.readFile(
+          path.resolve(process.cwd(), targetPath, 'index.js'),
+          'utf8'
+        )
+      ).toMatch(name);
     });
   });
 });

@@ -39,6 +39,7 @@ jobs:
   release:
     needs: [self-test, build]
     steps:
+      - uses: actions/checkout@v2
       - uses: tradeshift/actions-semantic-release@v1
         id: semantic-release
         with:
@@ -47,6 +48,8 @@ jobs:
               'master'
             ]
           check_name: Semantic release
+          registry: https://npm.pkg.github.com/
+          npm_publish: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,7 +1,6 @@
 {
   "name": "@tradeshift/actions-template-test",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.0-semantically-released",
   "description": "Test helper for backstage scaffolder templates",
   "main": "lib/scaffold.js",
   "scripts": {
@@ -15,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/tradeshift/actions-template-rest.git"
   },
   "keywords": [
     "actions",
     "node",
-    "setup"
+    "setup",
+    "backstage",
+    "scaffold"
   ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.5.0",
     "@backstage/backend-common": "^0.9.0",
