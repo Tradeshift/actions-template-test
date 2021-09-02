@@ -9,7 +9,7 @@ The github action takes the same arguments as the template action.
 ```
 jobs:
   template:
-    runs-on: self-hosted
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - uses: tradeshift/actions-template-test@v1

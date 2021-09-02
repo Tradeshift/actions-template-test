@@ -37,6 +37,7 @@ jobs:
       # run assertion script
       - run: node output/index.js
   release:
+    runs-on: ubuntu-20.04
     needs: [self-test, build]
     steps:
       - uses: actions/checkout@v2
