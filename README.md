@@ -6,7 +6,7 @@ The github action takes the same arguments as the template action.
 
 ## Use as github action
 
-```
+```yml
 jobs:
   template:
     runs-on: ubuntu-20.04
