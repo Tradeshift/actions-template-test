@@ -6,7 +6,7 @@ export async function run(): Promise<any> {
   const url = core.getInput('url');
   const targetPath = core.getInput('targetPath');
   const values = JSON.parse(core.getInput('values'));
-  const copyWithoutRender = core.getMultilineInput('copyWithoutRenders');
+  const copyWithoutRender = core.getMultilineInput('copyWithoutRender');
   const cookieCutterCompat = core.getBooleanInput('cookieCutterCompat');
 
   return runTemplate({
