@@ -14,7 +14,7 @@ const run = async () => {
     }
   }
 
-  require('./lib/main').run();
+  return require('./lib/main').run();
 };
 
 run().catch(err => {
