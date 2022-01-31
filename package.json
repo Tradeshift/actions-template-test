@@ -30,7 +30,7 @@
     "@backstage/config": "^0.1.13",
     "@backstage/plugin-scaffolder-backend": "^0.15.14",
     "fs-extra": "^10.0.0",
-    "winston": "^3.3.3"
+    "winston": "^3.5.0"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.12",
