@@ -27,7 +27,7 @@
   "dependencies": {
     "@actions/core": "^1.5.0",
     "@backstage/backend-common": "^0.9.0",
-    "@backstage/config": "^0.1.8",
+    "@backstage/config": "^0.1.13",
     "@backstage/plugin-scaffolder-backend": "^0.15.14",
     "fs-extra": "^10.0.0",
     "winston": "^3.3.3"
