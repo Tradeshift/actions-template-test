@@ -28,7 +28,7 @@
     "@actions/core": "^1.6.0",
     "@backstage/backend-common": "^0.9.0",
     "@backstage/config": "^0.1.13",
-    "@backstage/plugin-scaffolder-backend": "^0.15.22",
+    "@backstage/plugin-scaffolder-backend": "^0.15.23",
     "fs-extra": "^10.0.0",
     "winston": "^3.5.0"
   },
