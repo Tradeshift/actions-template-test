@@ -8,7 +8,6 @@ metadata:
   tags:
     - github-action
     - nodejs
-
 spec:
   type: other
   lifecycle: experimental
