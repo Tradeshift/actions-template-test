@@ -5,6 +5,9 @@ metadata:
   description: |
     Github action and node lib to help test backstage software templates
   github.com/project-slug: Tradeshift/actions-template-test
+  tags:
+    - github-action
+    - nodejs
 spec:
   type: other
   lifecycle: experimental

@@ -1,5 +1,14 @@
 {
     "description": "Test helper for backstage scaffolder templates",
-    "maintainers": ["Developer productivity"],
-    "checks": ["build", "self-test"]
+    "maintainers": [
+        "Developer productivity"
+    ],
+    "checks": [
+        "build",
+        "self-test"
+    ],
+    "topics": [
+        "github-action",
+        "nodejs"
+    ]
 }
