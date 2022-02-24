@@ -7,10 +7,11 @@ const run = async () => {
   {
     const { stdout, stderr } = await exec('npm ci --only=prod --silent', {
       cwd: path.resolve(__dirname),
+
     });
     console.log(stdout);
     if (stderr) {
-      return Promise.reject(stderr);
+      console.error(stderr);
     }
   }
 
