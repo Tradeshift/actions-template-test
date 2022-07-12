@@ -36,12 +36,15 @@ export async function runTemplate(input: {
   });
 
   const context: ActionContext<any> = {
-    baseUrl: `file://${process.cwd()}/src`,
     logger,
     workspacePath: process.cwd(),
     input,
     async createTemporaryDirectory() {
       return fs.mkdtemp(path.resolve(os.tmpdir(), 'scaffold'));
+    },
+    templateInfo: {
+      baseUrl: `file://${process.cwd()}/${input.url}`,
+      entityRef: `component:default/${path.basename(process.cwd())}`,
     },
     // unused in testing but required for typing
     logStream: null as any,
